@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Learning JavaScript</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="header">
+		<h1>Learning JavaScript</h1>
+		<p>Roshni Velluva Puthanidam</p>
+		<button onclick="this.innerHTML ='You Clicked!'">Click</button>
+	</div>
+	<div class="container">
+
+	</div>
+
+	<script type="text/javascript">
+		// alert('Script tag works! ')
+		// Number
+		// String
+		// Array
+		// Object
+		function doClick(){
+			alert('clicked');
+		}
+
+		//var  num1 = '40';
+		//var num2 = '50';
+		//var colors = ['blue','red','green',7];
+		var numbers =[1.2.3.4];
+		numbers.reverse(); // get output in reverse order
+		//alert(colors.length);
+        console.log('hello');
+		for(var i=0; i<10; i++){
+			console.log(i);
+		}
+		numbers.forEach(function(number){
+			console.log(numbers);
+		});
+
+		// var fruit = 'banana';
+
+		// switch(fruit){
+		// 	case 'banana':
+		// 	    alert('I dont like banana');
+		// 	    break;
+		// 	case 'apple':
+		// 	    alert('I love apples');
+		// 	    break;
+		// 	case 'orange':
+		// 	    alert('oranges are okay');
+		// 	    break;
+		// 	default:
+		// 	    alert('I love all other fruits');
+		// 	    break;
+		// }
+		var person = { //object data type
+			firstName: Roshni;
+			lastName: Velluva Puthanidam;
+			Age : 27;
+			Children: ['ann','fenn'];
+			address: {
+				street :1750 Stokes St.;
+				Apt: 142;
+				city: san jose;
+			}
+			fullName: function(){
+				return this.firstName+ " " + this.lastName;
+			}
+		}
+
+		var apple = new Object();
+		apple.color = 'red';
+		apple.shape = 'round';
+		apple.describe = function(){ 
+			return 'apple have the color ' + this.color +' and shape '+this.shape;
+		}
+		//alert(person.fullName);
+
+		function fruit(name, color, shape){
+			this.name = name;
+			this.color = color;
+			this.shape = shape;
+
+			this.describe = function(){''
+				return 'A' + this.name + ' have the color ' + this.color + ' and shape '+ this.shape; 
+			}
+		}
+		var banana = new fruit('banana', 'yellow','long');
+		var orange = new fruit('orange','orange','round');
+ 
+		//alert("Concatinated result is:" + (num1+num2));
+	</script>
+</body>
+</html>

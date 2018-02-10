@@ -1,0 +1,15 @@
+.portfolio{
+	width: 1000px;
+	height: 1000px;
+	background-color: #ff0;
+	font-family: "Arial";
+	cursor:pointer;
+
+}
+.heading{
+	text-decoration: underline;
+	text-align: center;
+}
+.item{
+	text-align: center;
+}
